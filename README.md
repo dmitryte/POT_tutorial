@@ -1,17 +1,18 @@
-# OpenVINO Post-Training Optimization Toolkit (POT) Tutorial
+# OpenVINO toolkit hands-on training
 
-[Post-Training Optimization Toolkit (POT)](https://docs.openvinotoolkit.org/latest/_README.html) is a part of [OpenVINO Toolkit](https://docs.openvinotoolkit.org/) which is responsible of applying different optimization techniques like quantization or sparcity. This repo helps you to easy undestand the tool in well-documented practical way.
+## What are we going to do here?
 
-## This tutorial consists of 2 parts:
+### This tutorial consists of 2 parts:
 
-#### [BASIC](https://github.com/avbelova/POT_tutorial/blob/master/POT_tutorial_BASICS.ipynb) which shows "standard" quantization workflow
-* What's POT configuration files structure
-* How to run POT in simplified mode
-* How to measure accuracy of FP32, INT8 models using POT config
-* How to create your own POT config
-* How to properly benchmark the workload
+### Basic review of OpenVINO tools:
+* Model Optimizer - tool that facilitates the transition between the training and deployment environment, performs static model analysis, and adjusts deep learning models for optimal execution on end-point target devices.
+* Inference Engine - a unified API to allow high performance inference on many hardware.
+* Accuracy Checker - tool to measure accuracy of a model.
+* Post-Training Optimization Toolkit - tool designed to convert a model into a more hardware-friendly representation by applying specific methods that do not require re-training, for example, post-training quantization.
+* Benchmark Application - Python sample for getting best performance with the OpenVINO Inference Engine.
+* Python API for Inference Engine
 
-#### [ADVANCED](https://github.com/avbelova/POT_tutorial/blob/master/POT_tutorial_ADVANCED.ipynb) covers complicated cases and focuses on custom funtionality, discovering secrets of Accuracy Checker - the base of POT.
+### [ADVANCED](https://github.com/avbelova/POT_tutorial/blob/master/POT_tutorial_ADVANCED.ipynb) covers complicated cases and focuses on custom funtionality, discovering secrets of Accuracy Checker - the base of POT.
 * Accuracy checker architecture
 * How to analyze the model
 * How to support custom dataset 
@@ -38,7 +39,7 @@
 
 `$ source /opt/intel/openvino/bin/setupvars.sh`
 
-4. Run Jypyter Notebook
+4. Run Jupyter Notebook
 
 `$ jupyter notebook`
 
